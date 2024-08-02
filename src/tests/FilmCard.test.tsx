@@ -19,7 +19,7 @@ describe('FilmCard', () => {
 
     render(<FilmCard currentFilm={film}/>);
 
-    const filmImg = document.querySelector('div');
+    const filmImg = document.querySelector('section');
 
     if (filmImg) {
       expect(filmImg.getAttribute('src')).toBe(
