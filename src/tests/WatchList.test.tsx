@@ -7,7 +7,7 @@ describe('WatchList', () => {
     // Render the component
     render(<WatchList/>);
 
-    const WatchListContainer = document.querySelector('#emptyMessage');
+    const WatchListContainer = document.querySelector('.emptyMessage');
 
     if (WatchListContainer) {
       // Format the rendered output

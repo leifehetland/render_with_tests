@@ -37,7 +37,7 @@ describe('FilmsAlreadySeen', () => {
   it('should match snapshot', () => {
     render(<FilmsAlreadySeen alreadyWatchedFilms={films} removeFromStorage={null}/>);
 
-    const filmContainer = document.querySelector('#filmCard');
+    const filmContainer = document.querySelector('.filmCard');
 
     if (filmContainer) {
       expect(pretty(filmContainer.innerHTML)).toMatchSnapshot();
