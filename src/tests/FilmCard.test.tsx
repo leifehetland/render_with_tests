@@ -19,7 +19,7 @@ describe('FilmCard', () => {
 
     render(<FilmCard currentFilm={film}/>);
 
-    const filmImg = document.querySelector('div');
+    const filmImg = document.querySelector('img');
 
     if (filmImg) {
       expect(filmImg.getAttribute('src')).toBe(
@@ -32,7 +32,7 @@ describe('FilmCard', () => {
   it('should match snapshot', () => {
     render(<FilmCard currentFilm={film} addToWatchList={null} addToSeenItList={null}/>);
 
-    const filmContainer = document.querySelector('#filmCard');
+    const filmContainer = document.querySelector('.filmCard');
 
     if (filmContainer) {
       expect(pretty(filmContainer.innerHTML)).toMatchSnapshot();
