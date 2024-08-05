@@ -7,7 +7,7 @@ describe('WatchList', () => {
     // Render the component
     render(<SeenIt/>);
 
-    const WatchListContainer = document.querySelector('.banana') as HTMLHeadingElement;
+    const WatchListContainer = document.querySelector('.emptyMessage') as HTMLHeadingElement;
 
     // if (WatchListContainer) {
       console.log(WatchListContainer.innerHTML);
