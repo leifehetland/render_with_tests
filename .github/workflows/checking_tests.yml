@@ -10,6 +10,7 @@ on:
 
 jobs:
   test:
+    name: Checking Tests
     runs-on: ubuntu-latest
 
     steps:

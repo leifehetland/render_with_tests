@@ -3,9 +3,13 @@ name: Deploy To Render
 on:
   push:
     branches: [main]
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   ci:
+    name: Deploy To Render
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
