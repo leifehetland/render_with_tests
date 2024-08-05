@@ -7,13 +7,13 @@ describe('WatchList', () => {
     // Render the component
     render(<SeenIt/>);
 
-    const WatchListContainer = document.querySelector('.emptyMessage');
+    const WatchListContainer = document.querySelector('.banana') as HTMLHeadingElement;
 
-    if (WatchListContainer) {
-      // Format the rendered output
-
+    // if (WatchListContainer) {
+      console.log(WatchListContainer.innerHTML);
+      
       // Verify the output
       expect(WatchListContainer.innerHTML).toBe("Add films you've already seen here.");
-    }
+    // } 
   });
 });
