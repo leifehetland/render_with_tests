@@ -83,7 +83,7 @@ const FilmCard = ({
           )}
         </section>
       ) : (
-        <h1 style={{ margin: '16px 0' }}>Please search for a movie.</h1>
+        <h1 style={{ margin: '16px 0' }}>Please search for a film.</h1>
       )}
     </>
   );
